@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/rc">
+        <file>classes.json</file>
+        <file>events.json</file>
+    </qresource>
+    <qresource prefix="/qt/etc">
+        <file>qt.conf</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>Sans_Serif.ttf</file>
+    </qresource>
+</RCC>

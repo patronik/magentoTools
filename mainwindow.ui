@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>414</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Magento Skeleton</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Set magento  dir</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="MagentoRootPathLabel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Clean</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Skeleton</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>371</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QCheckBox" name="modelCheckBox">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Model</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="helperCheckBox">
+           <property name="text">
+            <string>Helper</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="blockCheckBox">
+           <property name="text">
+            <string>Block</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="controllerCheckBox">
+           <property name="text">
+            <string>Router</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>371</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLineEdit" name="companyField">
+           <property name="text">
+            <string>CompanyName</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="moduleNameField">
+           <property name="text">
+            <string>ModuleName</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="codePoolBox">
+           <property name="currentText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>111</y>
+          <width>371</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Router front name</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="routerName"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Applied Rewrites (double click to remove)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="rewriteList">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QCheckBox" name="installCheckBox">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>73</y>
+          <width>82</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Install</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="vnum1">
+        <property name="geometry">
+         <rect>
+          <x>265</x>
+          <y>73</y>
+          <width>34</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>225</x>
+          <y>73</y>
+          <width>31</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ver.</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="adminControllerCheckBox">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>73</y>
+          <width>102</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Admin Router</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="vnum3">
+        <property name="geometry">
+         <rect>
+          <x>345</x>
+          <y>73</y>
+          <width>34</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="vnum2">
+        <property name="geometry">
+         <rect>
+          <x>305</x>
+          <y>73</y>
+          <width>34</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Rewrite</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QSplitter" name="splitter">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Company</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="companyDropDown"/>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Module</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="moduleDropDown"/>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Type</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="typeDropDown"/>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Class From</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="classFromDropDown"/>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>Class To</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="classToField"/>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addRewriteBtn">
+          <property name="text">
+           <string>Apply</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Observer</string>
+       </attribute>
+       <widget class="QComboBox" name="observerEvent">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>321</width>
+          <height>21</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>10</y>
+          <width>41</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Event</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>42</y>
+          <width>371</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>Observer identifier</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Observer class</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="observerIdentifier"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="observerClass"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>Observer method</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="observerMethod"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="applyObserverButtom">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>310</y>
+          <width>371</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Apply</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="eventList">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>190</y>
+          <width>369</width>
+          <height>111</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>150</y>
+          <width>23</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Area</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="observerAreaDropDown">
+        <property name="geometry">
+         <rect>
+          <x>272</x>
+          <y>151</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>151</y>
+          <width>205</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Applied Observers (double click to remove)</string>
+        </property>
+       </widget>
+       <zorder>label_8</zorder>
+       <zorder>observerAreaDropDown</zorder>
+       <zorder>label_13</zorder>
+       <zorder>applyObserverButtom</zorder>
+       <zorder>eventList</zorder>
+       <zorder>layoutWidget</zorder>
+       <zorder>observerEvent</zorder>
+       <zorder>label_9</zorder>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
