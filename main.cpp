@@ -19,7 +19,9 @@ void install() {
 
 int main(int argc, char *argv[])
 {
-    install();
+    #ifndef Q_OS_WIN32
+        install();
+    #endif
 
     QApplication a(argc, argv);
 
