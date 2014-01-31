@@ -1,8 +1,5 @@
 #include "mainwindow.h"
 #include <QApplication>
-#include <QFontDatabase>
-#include <QLibraryInfo>
-#include <QDebug>
 
 void install() {
 

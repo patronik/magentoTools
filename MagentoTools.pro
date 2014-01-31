@@ -33,4 +33,8 @@ FORMS    += mainwindow.ui
 RESOURCES += \
     magentotools.qrc
 
+#QMAKE_LFLAGS = -static -static-libgcc -static-libstdc++
+
+#CONFIG += release
+
 #CONFIG += static
