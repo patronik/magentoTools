@@ -13,14 +13,14 @@ MagentoTools created using QT C++ framework and can be compiled for different pl
 
 I would advice you to build QT framework from sources files (can be downloaded here http://qt-project.org/downloads). it makes sure to get framework builded and configured correctly. Also you will know that you have all required dependencies resolved on your system (some unresolved dependencies can cause problems during application building process). 
 
-To get QT builded statically (Ubuntu)
+To build QT statically (Ubuntu)
 1. Download and extract qt source files to any folder you like.
 2. cd to directory with extracted qt sources.
 3. ./configure -static -release -qt-xcb -nomake examples -nomake tools -prefix /opt/Qt-static
 4. make
 5. make install
  
-To get QT builded statically (Windows)
+To build QT statically (Windows)
 1. install python and perl.
 2. open qt cmd console tool.
 3. cd to directory with extracted qt sources.
