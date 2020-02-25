@@ -11,7 +11,7 @@ Click "Save" button to create new module skeleton inside your Magento site root 
 MagentoTools created using QT C++ framework and can be compiled for different platforms. 
 
 
-I would advice you to build QT framework from sources files (can be downloaded here http://qt-project.org/downloads). it makes sure to get framework builded and configured correctly. Also you will know that you have all required dependencies resolved on your system (some unresolved dependencies can cause problems during application building process). 
+I would advice you to build QT framework from sources files (can be downloaded here http://qt-project.org/downloads). 
 
 To build QT statically (Ubuntu)
 1. Download and extract qt source files to any folder you like.
